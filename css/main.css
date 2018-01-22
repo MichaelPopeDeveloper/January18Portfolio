@@ -1,0 +1,574 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.Home-Page {
+  background-image: url('../img/home.png');
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Home-Header {
+  font-size: 5vw;
+  color: white;
+}
+
+.Header-Line {
+  width: 27em;
+  height: 0.2em;
+  background-color: white;
+}
+
+.Header-Tag-Container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 27em;
+  height: 3em;
+
+}
+
+.Header-Tags {
+  color: white;
+  font-size: 3vw;
+  font-weight: 400;
+}
+
+/*=============================================
+Abour Me Page
+===============================================*/
+
+.About-Page {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+
+}
+
+.About-Img-Container {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 70vh;
+}
+
+.Me-Img {
+  width: 60%;
+height: 62%;
+border-radius: 4em;
+}
+
+.About-Text-Container {
+  width: 45vw;
+  height: 70vh;
+}
+
+.About-Text {
+  color: darkgrey;
+  font-size: 1.1em;
+}
+
+.About-Small-Header {
+  color: darkgrey;
+  font-size: 1.3em;
+
+}
+
+.About-Button {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 9em;
+  height: 3em;
+  width: 9em;
+  color: white;
+  background-color: red;
+}
+
+.Work-Page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-size: 1.2em;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.Review-Author {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 5em;
+
+}
+
+.Review-Author-Text {
+  text-align: center;
+margin-left: 1em;
+font-weight: 700;
+
+}
+
+.Mom-Img {
+  border-radius: 2.3em;
+  height: 5em;
+}
+
+
+
+.Work-H1 {
+  color: black;
+}
+
+.Block-Container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Work-Block-Text {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.Education-Page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  height: 100vh;
+
+}
+
+.Education-P {
+  font-size: 1.5em;
+  color: grey;
+}
+
+.Contact-Page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+
+
+
+
+}
+
+.Contact-H1 {
+  color: black;
+}
+
+.Contact-Page-Subheader {
+  text-align: center;
+  color: grey;
+
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+
+
+}
+
+.inp {
+  width: 30%;
+  height: 5%;
+  background-color: white;
+  color: black;
+  border-radius: 0.1em;
+
+}
+
+.msg-box {
+  width: 50%;
+  height: 40%;
+}
+/*===========================================
+Media Queries
+=============================================*/
+
+@media (min-width: 450px) {
+  .Header-Tags {
+    /* color: red; */
+    font-size: 2vw;
+    font-weight: 400;
+  }
+
+ }
+
+ @media (min-width: 850px) {
+   .Header-Tags {
+     /* color: blue; */
+     font-size: 1vw;
+     font-weight: 400;
+   }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
