@@ -87,272 +87,72 @@ body {
 .title {
     color: white;
 }
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.Home-Page {
-  background-image: url('../img/home.png');
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.Home-Header {
-  font-size: 5vw;
-  color: white;
-}
-
-.Header-Line {
-  width: 27em;
-  height: 0.2em;
-  background-color: white;
-}
-
-.Header-Tag-Container {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 27em;
-  height: 3em;
-
-}
-
-.Header-Tags {
-  color: white;
-  font-size: 3vw;
-  font-weight: 400;
-}
-
-/*=============================================
-Abour Me Page
-===============================================*/
-
-.About-Page {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  color: white;
-
-}
-
-.About-Img-Container {
-  display: flex;
-  justify-content: center;
-  width: 50vw;
-  height: 70vh;
-}
-
-.Me-Img {
-  width: 60%;
-height: 62%;
-border-radius: 4em;
-}
-
-.About-Text-Container {
-  width: 45vw;
-  height: 70vh;
-}
-
-.About-Text {
-  color: darkgrey;
-  font-size: 1.1em;
-}
-
-.About-Small-Header {
-  color: darkgrey;
-  font-size: 1.3em;
-
-}
-
-.About-Button {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 9em;
-  height: 3em;
-  width: 9em;
-  color: white;
-  background-color: red;
-}
-
-.Work-Page {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-
-blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  font-size: 1.2em;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote:after {
-  color: #ccc;
-  content: close-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-left: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
-
-.Review-Author {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  height: 5em;
-
-}
-
-.Review-Author-Text {
-  text-align: center;
-margin-left: 1em;
-font-weight: 700;
-
-}
-
-.Mom-Img {
-  border-radius: 2.3em;
-  height: 5em;
-}
-
-
-
-.Work-H1 {
-  color: black;
-}
-
-.Block-Container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.Work-Block-Text {
-  font-size: 1.3em;
-  text-align: center;
-}
-
-.Education-Page {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-
-
-  width: 100%;
-  height: 100vh;
-
-}
-
-.Education-P {
-  font-size: 1.5em;
-  color: grey;
-}
-
-.Contact-Page {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  color: white;
-
-
-
-
-}
-
-.Contact-H1 {
-  color: black;
-}
-
-.Contact-Page-Subheader {
-  text-align: center;
-  color: grey;
-
-}
-
-.form-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-
-
-}
-
-.inp {
-  width: 30%;
-  height: 5%;
-  background-color: white;
-  color: black;
-  border-radius: 0.1em;
-
-}
-
-.msg-box {
-  width: 50%;
-  height: 40%;
-}
-/*===========================================
-Media Queries
-=============================================*/
-
-@media (min-width: 450px) {
-  .Header-Tags {
-    /* color: red; */
-    font-size: 2vw;
-    font-weight: 400;
-  }
-
- }
-
- @media (min-width: 850px) {
-   .Header-Tags {
-     /* color: blue; */
-     font-size: 1vw;
-     font-weight: 400;
-   }
-
-  }
-
-
-
-
 
 
 
@@ -507,7 +307,6 @@ Media Queries
 .clearfix {
     *zoom: 1;
 }
-
 
 /* ==========================================================================
    Print styles

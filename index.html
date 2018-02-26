@@ -6,69 +6,61 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Michael</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.scss">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-  <div class="Home-Page">
-    <div class="Header-Line"></div>
-    <h1 class="Home-Header">Michael Pope</h1>
-    <div class="Header-Line"></div>
-    <div class="Header-Tag-Container">
-    <h2 class="Header-Tags">#User Experience</h2>
-    <h2 class="Header-Tags">#Web Developer</h2>
-    <h2 class="Header-Tags">#Web Designer</h2>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="Home-Page">
+  <div class="home-text-container">
+    <div class="home-hr"></div>
+<h1 class="home-header">Michael Pope</h1>
+<div class="home-hr"></div>
+<p class="home-hashtags">#Web Developer #Web Designer #UX/UI</p>
   </div>
-  </div>
+</div>
+<div>
   <div class="About-Page">
-    <div class="About-Img-Container">
-      <img src="img/me.jpg" alt="" class="Me-Img">
-    </div>
-    <div class="About-Text-Container">
-      <h4 class="About-Small-Header">Hi, I'm Michael, A Web Developer From Las Vegas.</h4>
-      <p class="About-Text">I am a self taught front-end web developer, my skillset includes: HTML5, CSS3, Javascript, and jQuery. I'm currently learning React.js, and back-end technologies to expand my horizons.
-      <br />
-      <br />
-      I am a UNLV alumni, pursuing a degree in computer science (class of 2021).
-      </p>
-      <div class="About-Button"><p>Hire Me</p></div>
-    </div>
-  </div>
-  <div class="Work-Page">
-    <h1 class="Work-H1">Reviews</h1>
-    <blockquote> Michael compleated our Project and did an exellect job </blockquote>
-    <div class="Review-Author">
-      <img src="img/mom.jpg" class="Mom-Img" alt="">
-    <p class="Review-Author-Text"> Debra Pope <br /> Founder of Primary Group Inc.</p>
-  </div>
-  </div>
-  <div class="Education-Page">
-<h1>My Projects</h1>
-    </div>
-    <div class="Contact-Page">
-      <h1 class="Contact-H1">Want To Work Together?</h1>
-      <h2 class="Contact-Page-Subheader">Give me Some details about your project and i'll be in touch quickly.</h2>
-      <form action="mail_handler.php" method="post" name="form" class="form-box">
-          <!-- <label for="name">Name</label><br> -->
-          <input type="text" name="name" class="inp" placeholder="Enter Your Name Here" required><br>
-          <!-- <label for="email">Email ID</label><br> -->
-          <input type="email" name="email" class="inp" placeholder="Enter Your Email" required=""><br>
-          <!-- <label for="phone"></label><br> -->
-          <input type="tel" name="phone" class="inp" placeholder="Enter Your Phone" required=""><br>
-          <!-- <label for="message">Message</label><br> -->
-          <textarea name="msg" class="msg-box" placeholder="Enter Your Message Here..." required></textarea><br>
-          <input type="submit" name="submit" value="send" class="sub-btn">
-      </form>
+    <div class="about-left"><img class="about-left-img" src="img/meme.jpg"></div>
+    <div class="about-right">
+    <h1 class="about-right-text">Hi, I'm Michael, A Web Developer From Las Vegas.</h1>
 
-    </div>
+    <p class="about-right-text">I am a self taught front-end web developer, my skillset includes: HTML5, CSS3, Javascript, and JQuery. I'm currently learning React.js and PHP to expand my horizons.</p>
+    <a class="About-Button" href="#Contact-Page">Hire Me</a>
+  </div>
 
+  </div>
+</div>
+<div class="Testimonial-Page">
+  <h1>Testimonials</h1>
+  <div class="testimonial">
+<blockquote>Michael compleated our project and did an exellent job!</blockquote>
+<div class="testimonial-info">
+<img class="testimonial-img" src="img/mom.jpg">
+<h3 class="testimonial-info-text">- Debra Pope <br> Founder of Primary Group INC.</h3>
+</div>
+</div>
+</div>
+<div class="Contact-Page" id="Contact-Page">
+  <h1>Want To Work Together?</h1>
+  <div class="contact-card">
+    <h1 class="contact-card-text">Email: <br> michaelpopedeveloper@gmail.com</h1>
+    <h1 class="contact-card-text">Phone: <br> 702-559-1821</h1>
+
+  </div>
+</div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
