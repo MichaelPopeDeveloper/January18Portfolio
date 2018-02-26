@@ -1,0 +1,185 @@
+// Mixins!
+@mixin flex-custom ($w, $h, $fd,)  {
+	display: flex;
+	width: $w;
+	height: $h;
+	flex-direction: $fd;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+@mixin text($fs, $c, $fw) {
+	font-size: $fs;
+	color: $c;
+	font-weight: $fw;
+	text-align: center;
+	padding: 0px, 0px;
+	margin: 0px, 0px;
+}
+
+@mixin line($w, $h, $c) {
+	width: $w;
+	height: $h;
+	background-color: $c;
+
+	padding: 0px, 0px;
+	margin: 0px, 0px;
+}
+
+@mixin img($h, $w, $br){
+	height: $h;
+	width: $w;
+	border-radius: $br;
+
+}
+// Actual Page Elements!
+.Home-Page {
+	@include flex-custom(100%, 100vh, column);
+	background-image: url(../img/home.png);
+}
+
+.home-text-container {
+	@include flex-custom(auto, 10em, column);
+	min-height: 19em;
+	min-width: 15em;
+}
+
+.home-header {
+	@include text(7vw, white, 550);
+	line-height: 0;
+}
+
+.home-hr {
+	@include line(100%, 0.2em, white);
+}
+
+.home-hashtags {
+@include text(2vw, white, 400);
+}
+
+.About-Page {
+	@include flex-custom(100%, 130vh, column);
+	background-color: white;
+}
+
+.about-left {
+	@include flex-custom(100%, 40vh, column);
+	}
+
+.about-left-img {
+	@include img(55%, auto, 75px);
+
+}
+
+.about-right {
+	@include flex-custom(100%, 60vh, column);
+	justify-content: flex-start;
+}
+
+.about-right-text {
+	@include text(1.8vw, #4f4f4f, 550);
+	max-width: 50%;
+	line-height: 1.5;
+	text-align: justify;
+
+
+}
+
+.About-Button {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 9em;
+  height: 3em;
+  width: 9em;
+  color: white;
+  background-color: red;
+}
+
+.Testimonial-Page {
+	@include flex-custom(100%, 52vh, column);
+	background-color: lightgrey;
+}
+
+.testimonial-header {
+	@include text(4vw, black, 500);
+}
+
+.testimonial {
+	@include flex-custom(80%, auto, column);
+}
+
+.testimonial-info {
+	@include flex-custom(45%, auto, row);
+	justify-content: center;
+	min-width: 18em;
+}
+
+.testimonial-info-text {
+	@include text(1.5vw, black, 650);
+text-align: center;
+	margin-left: 5%;
+}
+
+@media (max-width: 730px)
+ {
+	 .testimonial-info-text {
+	 	font-size: 2.5vw;
+	 }
+
+	 .about-right-text {
+	 	font-size: 2.9vw;
+	 }
+
+  }
+
+.testimonial-img {
+	@include img(5em, auto, 35px);
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid black;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-size: 1.2em;
+  quotes: "\201C""\201D""\2018""\2019";
+	line-height: 2;
+	text-align: center;
+}
+blockquote:before {
+  color: blakc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  color: black;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.Contact-Page {
+	@include flex-custom(100%, 110vh, column);
+}
+
+.contact-card {
+	@include flex-custom(40%, 40vh, column);
+	min-width: 20em;
+	border-top: solid red 7px;
+	border-radius: 5px;
+	background-color: #edeeef;
+	box-shadow: 0px 1.5px  #888888;
+
+}
+
+.contact-card-text {
+	@include text(2vw, black, 600);
+}
